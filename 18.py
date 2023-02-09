@@ -18,7 +18,7 @@ list_1 = fill_array(n)
 number = int(input('Близость к какому числу проверить? '))
 less_difference = abs(int(list_1[0]) - number)
 result_number = list_1[0]
-for i in list_1[1::]:
+for i in list_1[1:]:
     if abs(int(i) - number) < less_difference:
         less_difference = abs(int(i) - number)
         result_number = i
